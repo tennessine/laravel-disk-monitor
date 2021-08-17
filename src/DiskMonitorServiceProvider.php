@@ -4,7 +4,7 @@ namespace Tennessine\DiskMonitor;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Tennessine\DiskMonitor\Commands\RecordDiskMetrics;
+use Tennessine\DiskMonitor\Commands\RecordDiskMetricsCommand;
 
 class DiskMonitorServiceProvider extends PackageServiceProvider {
     public function configurePackage( Package $package ): void {
@@ -18,6 +18,6 @@ class DiskMonitorServiceProvider extends PackageServiceProvider {
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration( 'create_disk_monitor_table' )
-            ->hasCommand( RecordDiskMetrics::class );
+            ->hasCommand( RecordDiskMetricsCommand::class );
     }
 }
