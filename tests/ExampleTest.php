@@ -1,12 +1,10 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Tennessine\DiskMonitor\Tests;
 
-class ExampleTest extends TestCase
-{
+class ExampleTest extends TestCase {
     /** @test */
-    public function true_is_true()
-    {
-        $this->assertTrue(true);
+    public function true_is_true() {
+        $this->assertTrue( true );
     }
 }
